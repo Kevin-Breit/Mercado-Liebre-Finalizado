@@ -16,6 +16,6 @@ app.get('/login',(req, res) =>{
     res.sendFile(path.join(__dirname, './views/login.html'))
 })
 
-app.listen(3090,()=>{
+app.listen(process.env.PORT || 3090,()=>{
     console.log('servidor corriendo en el puerto 3090');
 })
