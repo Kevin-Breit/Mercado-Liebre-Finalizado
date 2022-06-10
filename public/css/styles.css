@@ -1,0 +1,302 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    display: none;
+    font-size: 16px;
+    padding-top: 20px;
+    color: #666;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-box{
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin: 1px 0px;
+    border: 1px solid #26282D;
+    border-radius: 4px;
+    position: relative;
+}
+
+.form-buscador label input{
+    width: 95%;
+    outline: none;
+    border: none;
+    padding: 4px 0;
+}
+
+.input-buscador{
+    width: 100%;
+}
+
+.form-completo{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.form-completo label{
+    width: 100%;
+}
+
+.form-box button{
+    position: absolute;
+    background-color: #ffffff;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    outline: none;
+    border: none;
+    border-left: solid 1px rgba(0, 0, 0, 0.5);
+    padding-left: 4px;
+}
+
+.header-total{
+    background-color: #EAC926
+}
+
+header{
+    background-color: #EAC926;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+
+header div.logo{
+    width: 50%;
+    margin: auto;
+}
+
+header nav{
+    font-size: 12px;
+}
+
+nav{
+    display: none;
+}
+
+header ul li{
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.top-header .form-buscador{
+    width: 50%;
+    margin: auto;
+    padding: 0 10px;
+}
+
+img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    background-color: #ebebeb;
+    margin: auto;
+}
+
+.main-article{
+    background-color: #ebebeb;
+    padding: 15px;
+    background-color: white;
+    position: relative;
+}
+
+.descuento{
+    width: 70%;
+    color: green;
+    font-size: 16px;
+}
+
+h2{
+    font-size: 24px;
+    color: #666;
+}
+
+article{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+article img{
+    border-bottom: solid 1px #ebebeb;
+}
+
+.precio-descuento{
+    display: flex;
+    align-items: center;
+}
+
+main section article i{
+    color: #39b54a; 
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.precio{
+    width: 60%;
+    font-size: 18px;
+}
+
+section p {
+    font-size: 16px;
+}
+
+.burger-menu{
+    text-align: center;
+}
+
+.burger-menu i{
+    margin: 16px;
+    background-color: #1259c3;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 8px;
+}
+
+footer div{
+    text-align: center;
+}
+
+.icono{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h4{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.pie-pagina{
+    margin: 0;
+}
+
+.copyright{
+    font-size: 10px;
+    text-align: left;
+    margin-top: 36px;
+}
+
+@media (min-width: 361px) {
+    header div.logo{
+        width: 200px;
+    }
+
+    div.top-header{
+        flex-wrap: nowrap;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    h3{
+      display: block;
+    }
+    nav{
+        display: block;
+    }
+    
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start
+    }
+    
+    article{
+        width: 45%;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        display: flex;
+    }
+
+  }
+
+@media (min-width : 769px){
+    
+    article{
+        width: 20%;
+    }
+    div.top-header{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .main-article h3{
+        display: none;
+    }
+
+    article:hover .main-article h3{
+        display: flex;
+    }
+
+    article:hover .main-article i{
+        transform: rotateZ(-90deg);
+        transition-duration: 1s;
+    }
+
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .texto-footer{
+        margin: 10px;
+        display: flex;
+    }
+
+    .texto-footer div:hover .icono i{
+        color:rgb(3, 23, 175);
+    }
+}
